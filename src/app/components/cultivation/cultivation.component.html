@@ -1,0 +1,258 @@
+<div class="container-fluid p-0 mt-5">
+    <div class="row m-0 justify-content-md-center">
+        <div class="col-10">
+            <div class="jumbotron jumbotron-fluid mt-3">
+              <div class="container">
+                <h1 class="display-4">栽培管理视频</h1>
+                <p class="lead">
+                    集中整理了寿光市鑫齐果蔬专业合作社的各种栽培管理视频。
+                </p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-0 justify-content-md-center pb-5">
+        <div class="col-10">
+            <div class="row m-0">
+                <div class="col-4 pt-3" *ngFor="let video of greenHouseVideos; let i = index">
+                    <div class="card" style="width: auto">
+                      <img class="card-img-top" src={{video.imageSrc}} alt="">
+                      <div class="card-body">
+                        <h4 class="card-title">{{video.title}}</h4>
+                        <p class="card-text">{{video.script}}</p>
+                        <button type="button" class="btn btn-primary" (click)="openVideo(video)">播放视频</button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="video-0" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{greenHouseVideos[0].title}}</h5>
+      </div>
+      <div class="modal-body">
+          <div class="row justify-content-md-center">
+              <div class="col-9">
+                  <iframe height=300 width=510 src='http://player.youku.com/embed/XMzE4Njk3MTA2NA==' frameborder=0 allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="video-1" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{greenHouseVideos[1].title}}</h5>
+      </div>
+      <div class="modal-body">
+          <div class="row justify-content-md-center">
+              <div class="col-9">
+                  <iframe height=300 width=510 src='http://player.youku.com/embed/XMzE4NDYxMDc3Ng==' frameborder=0 allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="video-2" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{greenHouseVideos[2].title}}</h5>
+      </div>
+      <div class="modal-body">
+          <div class="row justify-content-md-center">
+              <div class="col-9">
+                  <iframe height=300 width=510 src='http://player.youku.com/embed/XMzE4NDYxMjU5Mg==' frameborder=0 allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="video-3" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{greenHouseVideos[3].title}}</h5>
+      </div>
+      <div class="modal-body">
+          <div class="row justify-content-md-center">
+              <div class="col-9">
+                  <iframe height=300 width=510 src='http://player.youku.com/embed/XMzE4NDYyMzg2NA==' frameborder=0 allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="video-4" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{greenHouseVideos[4].title}}</h5>
+      </div>
+      <div class="modal-body">
+          <div class="row justify-content-md-center">
+              <div class="col-9">
+                  <iframe height=300 width=510 src='http://player.youku.com/embed/XMzE4Njk3MjM2MA==' frameborder=0 allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="video-5" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{greenHouseVideos[5].title}}</h5>
+      </div>
+      <div class="modal-body">
+          <div class="row justify-content-md-center">
+              <div class="col-9">
+                  <iframe height=300 width=510 src='http://player.youku.com/embed/XMzE4Njk3MzQ1Mg==' frameborder=0 allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="video-6" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{greenHouseVideos[6].title}}</h5>
+      </div>
+      <div class="modal-body">
+          <div class="row justify-content-md-center">
+              <div class="col-9">
+                  <iframe height=300 width=510 src='http://player.youku.com/embed/XMzE4NDYwODUyOA==' frameborder=0 allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="video-7" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{greenHouseVideos[7].title}}</h5>
+      </div>
+      <div class="modal-body">
+          <div class="row justify-content-md-center">
+              <div class="col-9">
+                  <iframe height=300 width=510 src='http://player.youku.com/embed/XMzE4NDYxNTExNg==' frameborder=0 allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="video-8" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{greenHouseVideos[8].title}}</h5>
+      </div>
+      <div class="modal-body">
+          <div class="row justify-content-md-center">
+              <div class="col-9">
+                  <iframe height=300 width=510 src='http://player.youku.com/embed/XMzE4NDYyMjUyOA==' frameborder=0 allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="video-9" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{greenHouseVideos[9].title}}</h5>
+      </div>
+      <div class="modal-body">
+          <div class="row justify-content-md-center">
+              <div class="col-9">
+                  <iframe height=300 width=510 src='http://player.youku.com/embed/XMzE4NTExNDc4MA==' frameborder=0 allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="video-10" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{greenHouseVideos[10].title}}</h5>
+      </div>
+      <div class="modal-body">
+          <div class="row justify-content-md-center">
+              <div class="col-9">
+                  <iframe height=300 width=510 src='http://player.youku.com/embed/XMzE4NTExNjg4OA==' frameborder=0 allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade bd-example-modal-lg" id="video-11" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{greenHouseVideos[11].title}}</h5>
+      </div>
+      <div class="modal-body">
+          <div class="row justify-content-md-center">
+              <div class="col-9">
+                  <iframe height=300 width=510 src='http://player.youku.com/embed/XMzE4NTExODUwMA==' frameborder=0 allowfullscreen></iframe>
+              </div>
+          </div>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>

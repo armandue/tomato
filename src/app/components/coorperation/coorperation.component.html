@@ -1,0 +1,43 @@
+<div class="container-fluid p-0 mt-5">
+    <div class="row m-0 justify-content-md-center">
+        <div class="col-10">
+            <div class="jumbotron jumbotron-fluid mt-3">
+              <div class="container">
+                <h1 class="display-4">合作社佐证材料汇编</h1>
+                <p class="lead">
+                    集中整理了寿光市鑫齐果蔬专业合作社的开办资质以及合同文件。
+                </p>
+              </div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-3 text-center" *ngFor="let certificate of certificates">
+                    <img class="img-fluid img-thumbnail rounded hand-pointer"
+                        src={{certificate.imageSmSrc}}
+                        data-toggle="modal" data-target="#trademarkModal"
+                        (click)="selectCertificate(certificate)"/>
+                    <p class="font-weight-bold mt-2" style="font-size: 1.5rem">
+                        {{certificate.title}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade bd-example-modal-lg" id="trademarkModal" tabindex="-1" role="dialog" aria-labelledby="trademark" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{{selectedCertificate.title}}</h5>
+      </div>
+      <div class="modal-body">
+          <img class="img-fluid rounded"
+              src={{selectedCertificate.imageSrc}}/>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+      </div>
+    </div>
+  </div>
+</div>
